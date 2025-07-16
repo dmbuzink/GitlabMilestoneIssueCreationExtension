@@ -1,7 +1,7 @@
 {
   "name": "Easy Milestone Issue Creator",
   "description": "Adds a 'New Issue' button to the milestone pages to more easily create issues for milestones",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
   "content_scripts": [
     {
@@ -15,10 +15,12 @@
     "48": "icons/icon_48.png",
     "128": "icons/icon_128.png"
   },
-  "permission": [
-    "activeTab"
-  ],
   "host_permissions": [
     "https://*/*/-/milestones/*"
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "easy-milestone-issue-creator@gamtheus.dev"
+    }
+  }
 }
